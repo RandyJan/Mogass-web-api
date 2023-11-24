@@ -39,6 +39,25 @@ class syncEarningsController extends Controller
                 'Message' => 'Bearer token is missing'
             ], 401);
         }
+        // $rules = [
+        //     'BRANCHID'=>'required|int',
+        //     'ID'=>'required|int',
+        //     'REFID'=>'required|int',
+        //     'CUSTOMERID'=>'required|int',
+        //     'ASSOCID'=>'required|int',
+        //     'CARDID'=>'required|int',
+        //     'TOTALLITERS'=>'required|decimal',
+        //     'TOTALAMOUNT'=>'required|decimal',
+        //     'MULTIPLIER'=>'required|decimal',
+        //     'POINTS'=>'required|int',
+        //     'CASHIERID'=>'required|int',
+        //     'TRANINVNO'=>'required|int',
+        //     'TRANSID'=>'required|int',
+        //     'TRANSDATE'=>'required|int',
+        //     'TRANSTIME'=>'required|int',
+        //     'CATEGORYCODE'=>'required|int',
+        //     'STATUS'=>'required|int',
+        // ];
 
         $jsondata = json_encode($request->LOYALTYEARNINGS);
         $jsondatab = json_decode($jsondata);
