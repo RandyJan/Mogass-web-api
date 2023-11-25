@@ -64,6 +64,7 @@ class syncRedemptionController extends Controller
                     'StatusCode' => 500,
                     'ID' =>$nextredemptionId,
                     'Message' => 'Failed',
+                    'error'=>$exception->getMessage()
                 ];
             }
         }

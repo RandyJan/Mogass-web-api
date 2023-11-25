@@ -103,7 +103,7 @@ class syncEarningsController extends Controller
                         'BRANCHID' => $data->BRANCHID,
                         'ID' => $data->ID,
                         'Message' => 'Failed',
-                        'error'=>$exception
+                        'error'=>$exception->getMessage()
                     ];
                 }
             }

@@ -57,7 +57,8 @@ class syncTransController extends Controller
                     'StatusCode' => 500,
                     'BRANCHID' => $data->BRANCHID,
                     'ID' => $data->ID,
-                    'Message' => $exception,
+                    'Message' => 'Failed',
+                    'error'=>$exception->getMessage()
                 ];
             }
         }
